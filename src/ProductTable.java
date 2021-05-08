@@ -2,6 +2,8 @@ import javax.swing.JFrame;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.SwingUtilities;
+import java.awt.*;
+
 public class ProductTable extends JFrame
 {
     public ProductTable()
@@ -23,11 +25,12 @@ public class ProductTable extends JFrame
         };
         //create table with data
         JTable table = new JTable(data, columns);
+        table.setBackground(Color.green);
 
         //add the table to the frame
         this.add(new JScrollPane(table));
 
-        this.setTitle("Table Example");
+        this.setTitle("Products");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.pack();
         this.setVisible(true);

@@ -10,14 +10,14 @@ import javax.swing.table.DefaultTableModel;
 
 public class DBUpdater {
 
-    String conString = "jdbc:mysql://localhost:3306/playersdb";
+    String conString = "jdbc:mysql://localhost:3306/customify";
     String username = "root";
     String password = "donatien";
 
     //INSERT INTO DB
-    public Boolean add(String name, String pos, String team) {
+    public Boolean add(String userProductCode, String userName, String userPrice) {
         //SQL STATEMENT
-        String sql = "INSERT INTO playerstb(Name,Position,Team) VALUES('" + name + "','" + pos + "','" + team + "')";
+        String sql = "INSERT INTO products(productCode,name,price) VALUES('" + userProductCode + "','" + userName + "','" + userPrice + "')";
 
         try {
             //GET COONECTION
@@ -41,12 +41,12 @@ public class DBUpdater {
         //ADD COLUMNS TO TABLE MODEL
         DefaultTableModel dm = new DefaultTableModel();
         dm.addColumn("ID");
-        dm.addColumn("Name");
+        dm.addColumn("Product Code");
         dm.addColumn("Position");
-        dm.addColumn("Team");
+        dm.addColumn("Price");
 
         //SQL STATEMENT
-        String sql = "SELECT * FROM playerstb";
+        String sql = "SELECT * FROM products";
 
         try {
             Connection con = DriverManager.getConnection(conString, username, password);

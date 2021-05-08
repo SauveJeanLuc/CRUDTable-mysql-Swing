@@ -58,11 +58,11 @@ public class Updater extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(jTable1);
 
-        jLabel1.setText("Name");
+        jLabel1.setText("Product Code");
 
         jLabel2.setText("Position");
 
-        jLabel3.setText("Team");
+        jLabel3.setText("Price");
 
         retrieveBtn.setText("Retrieve");
         retrieveBtn.addActionListener(new java.awt.event.ActionListener() {

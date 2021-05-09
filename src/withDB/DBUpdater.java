@@ -20,7 +20,7 @@ public class DBUpdater {
         String sql = "INSERT INTO products(productCode,name,price) VALUES('" + userProductCode + "','" + userName + "','" + userPrice + "')";
 
         try {
-            //GET COONECTION
+            //GET CONNECTION
             Connection con = DriverManager.getConnection(conString, username, password);
 
             // PREPARED STMT
@@ -79,7 +79,7 @@ public class DBUpdater {
     //UPDATE DATA
     public Boolean update(String id, String name, String pos, String team) {
         //SQL STMT
-        String sql = "UPDATE playerstb SET Name ='" + name + "',Position='" + pos + "',Team='" + team + "' WHERE ID='" + id + "'";
+        String sql = "UPDATE products SET Name ='" + name + "',Position='" + pos + "',Team='" + team + "' WHERE ID='" + id + "'";
 
         try {
             //GET COONECTION

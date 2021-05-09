@@ -60,7 +60,7 @@ public class Updater extends javax.swing.JFrame {
 
         jLabel1.setText("Product Code");
 
-        jLabel2.setText("Position");
+        jLabel2.setText("name");
 
         jLabel3.setText("Price");
 
@@ -175,7 +175,7 @@ public class Updater extends javax.swing.JFrame {
                                 .addGap(21, 21, 21))
         );
 
-        jLabel4.setText("ProgrammingWizards Channel");
+        jLabel4.setText("Products");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);

@@ -10,9 +10,9 @@ import javax.swing.table.DefaultTableModel;
 
 public class DBUpdater {
 
-    String conString = "jdbc:mysql://localhost:3306/customify";
-    String username = "root";
-    String password = "donatien";
+    String conString = "jdbc:mysql://localhost:3306/yourDatabaseName";
+    String username = "yourUserName";
+    String password = "yourPassword";
 
     //INSERT INTO DB
     public Boolean add(String userProductCode, String userName, String userPrice) {

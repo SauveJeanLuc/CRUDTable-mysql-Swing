@@ -59,9 +59,9 @@ public class DBUpdater {
             while (rs.next()) {
                 //GET VALUES
                 String id = rs.getString(1);
-                String name = rs.getString(2);
-                String pos = rs.getString(3);
-                String team = rs.getString(4);
+                String name = rs.getString(1);
+                String pos = rs.getString(2);
+                String team = rs.getString(3);
 
                 dm.addRow(new String[]{id, name, pos, team});
             }
@@ -103,7 +103,7 @@ public class DBUpdater {
     public Boolean delete(String id)
     {
         //SQL STMT
-        String sql="DELETE FROM playerstb WHERE ID ='"+id+"'";
+        String sql="DELETE FROM products WHERE ID ='"+id+"'";
 
         try
         {
